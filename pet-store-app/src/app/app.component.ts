@@ -16,4 +16,8 @@ export class AppComponent implements OnInit {
       this.username = `${profile.firstName} ${profile.lastName}`;
     });
   }
+
+  logout(): void {
+    this.keycloak.logout();
+  }
 }
